@@ -1,0 +1,195 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy';
+}
+
+body{
+    background-image: url('../images/visa.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 30px;
+    margin-right: 70px;
+}
+
+.navbar-brand img {
+    margin-left: 10px;
+}
+
+.navbar-nav img {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+    margin-top: 800px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-contact {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.message{
+    margin-top: 300px;
+}
+
+.confirmation-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+
+.confirmation-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    .message{
+        margin-left: -400px !important;;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 1000px;
+    }
+}
+
+@media (max-width: 920px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+    
+    .message{
+        margin-left: -320px;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+    
+    .message{
+        margin-left: -550px !important;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 300px;
+    }
+}

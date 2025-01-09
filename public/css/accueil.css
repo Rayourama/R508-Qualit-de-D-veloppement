@@ -1,0 +1,461 @@
+/* Styles de base pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy';
+    background-image: url('../images/accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Style pour l'image de fond */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Style pour le message de bienvenue */
+.welcome-message {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 215px;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+}
+
+.welcome-message h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style de la navbar */
+
+.bg-dark{
+    background-color: black !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 25px;
+    margin-right: 70px;
+}
+
+.navbar-brand img {
+    margin-left: 10px;
+}
+
+.navbar-nav img {
+    margin-right: 10px;
+}
+
+/* Styles pour le cadre noir vertical */
+.vertical-black-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec une légère transparence */
+    color: white; /* Couleur du texte en blanc */
+    width: 400px; /* Largeur du cadre */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    position: absolute; /* Positionnement absolu */
+    top: 45%; /* Centré verticalement */
+    margin-left: 1060px; /* Ajusté à gauche */
+    transform: translateY(-50%); /* Centrage vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre pour ajouter un effet de profondeur */
+    max-height: 80vh; /* Limite la hauteur si le contenu est trop long */
+    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+    margin-top: 200px;
+}
+
+/* Centrer le titre et ajouter de l'espace avec le contenu en dessous */
+.vertical-black-box h2 {
+    text-align: center; /* Centre le texte du titre */
+    font-size: 35px; /* Taille du texte */
+    margin-bottom: 40px; /* Espace en dessous du h2 */
+}
+
+.desc-president {
+    text-align: center !important; /* Centre le texte du titre */
+    font-size: 24px !important; /* Taille du texte */
+    margin-bottom: 40px !important; /* Espace en dessous du h2 */
+}
+
+/* Alignement à gauche des éléments de liste */
+.vertical-black-box ul {
+    margin-top: 25px;
+    list-style-position: inside; /* Garde les puces dans la zone du div */
+    padding-left: 0; /* Supprime le retrait par défaut */
+}
+
+.vertical-black-box li {
+    font-size: 24px;
+    text-align: left; /* Aligne les éléments de liste à gauche */
+    margin-bottom: 10px; /* Espace entre chaque élément de la liste */
+}
+
+.center-image {
+    display: block; /* L'image est traitée comme un bloc */
+    margin: 20px auto; /* Centre l'image horizontalement et ajoute un espace au-dessus */
+    width: 150px;
+    height: 250px;
+}
+
+/* Style général du carrousel */
+.carousel-container {
+    right: 250px;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white; /* Couleur du texte */
+    padding: 180px;
+    border-radius: 10px;
+    position: relative;
+    user-select: none; /* Empêche la sélection du texte */
+}
+
+/* Style des flèches */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3); /* Fond transparent */
+    border-radius: 50%; /* Rond */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition douce au survol */
+    user-select: none; /* Empêche la sélection du texte */
+}
+
+.left {
+    cursor: pointer !important;
+    right: -50px;
+}
+
+.right {
+    left: -50px;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Change la couleur de fond au survol */
+}
+
+.arrow-left {
+    left: -60px; /* Positionnement en dehors du container à gauche */
+}
+
+.arrow-right {
+    right: -60px; /* Positionnement en dehors du container à droite */
+}
+
+button.sr-only-focusable {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px; /* Taille des flèches */
+    cursor: pointer;
+}
+/* Conteneur pour l'image et le texte */
+.content-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center; /* Centrer le texte dans le conteneur */
+}
+/* Style général du carrousel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px; /* Largeur fixe pour le carrousel */
+    height: 500px; /* Hauteur fixe pour le carrousel */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    /*overflow: hidden;  S'assurer que tout reste à l'intérieur */
+}
+
+#carousel-link {
+    display: flex; /* Activer Flexbox dans le lien */
+    flex-direction: column; /* Empiler l'image et le texte verticalement */
+    justify-content: center; /* Centrer verticalement */
+    align-items: center; /* Centrer horizontalement */
+    text-decoration: none; /* Retirer le soulignement */
+    color: inherit; /* Garder la couleur de texte par défaut */
+    width: 100%; /* Optionnel : Ajuster la largeur */
+    max-width: 600px; /* Optionnel : Limiter la largeur */
+}
+
+/* Style pour l'image */
+.carousel-image {
+    max-width: 100%; 
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Espacement entre l'image et le texte */
+    max-height: 280px;
+}
+
+/* Conteneur pour le texte */
+.text-container {
+    /*! max-width: 55%; */ /* Le texte occupe 55% du conteneur */
+    height: 100%; /* S'assurer que le texte occupe tout l'espace vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement le texte */
+    text-align: center; /* Centrer le texte */
+}
+
+.text-container h2 {
+        font-size: 2.5rem;
+    }
+
+/* Style pour le titre et le résumé */
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: red;
+}
+
+#carousel-description {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Les slides sont alignées horizontalement grâce à flexbox */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Glissement des slides */
+    justify-content: center; /* Centrer chaque slide horizontalement */
+    align-items: center; /* Centrer chaque slide verticalement */
+    width: 100%;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+    margin-top: 500px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-contact {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Media Queries pour rendre la page responsive */
+/* Écrans de tablette et plus petits (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    /* Réduire le message de bienvenue */
+    .welcome-message h1 {
+        font-size: 50px !important;
+        margin-left: -20px !important;
+    }
+
+    .welcome-message p {
+        font-size: 16px;
+    }
+
+    /* Adapter la largeur du cadre noir vertical */
+    .vertical-black-box {
+        width: 300px;
+        margin-left: 250px !important;
+        margin-top: 800px;
+    }
+
+    /* Adapter la taille du carrousel */
+    .carousel-container {
+        width: 70%;
+        height: auto;
+        padding: 40px;
+        margin-left: 350px !important;
+    }
+
+    .carousel-image {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .text-container {
+        max-width: 60%;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 1000px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    /* Réduire le message de bienvenue */
+    .welcome-message h1 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .welcome-message p {
+        font-size: 16px;
+    }
+
+    /* Adapter la largeur du cadre noir vertical */
+    .vertical-black-box {
+        width: 300px;
+        margin-left: 350px;
+        margin-top: 900px;
+    }
+
+    /* Adapter la taille du carrousel */
+    .carousel-container {
+        width: 70%;
+        height: auto;
+        padding: 40px;
+        margin-left: 400px;
+    }
+
+    .carousel-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-container{
+        max-width: 100%;
+    }
+
+    .text-container h2 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 1200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    /* Réduire le message de bienvenue */
+    .welcome-message h1 {
+        font-size: 30px !important;
+        margin-left: -100px !important;
+    }
+
+    .welcome-message p {
+        font-size: 16px;
+    }
+
+    /* Adapter la largeur du cadre noir vertical */
+    .vertical-black-box {
+        width: 300px;
+        margin-left: 110px !important;
+        margin-top: 1000px;
+    }
+
+    /* Adapter la taille du carrousel */
+    .carousel-container {
+        width: 70%;
+        height: auto;
+        margin-left: 320px !important;
+    }
+
+    .carousel-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .text-container{
+        max-width: 100%;
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+        margin-top: 1200px;
+    }
+}

@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chewy';
+}
+
+.Imageback{
+    background-image: url('../images/accueil.jpg');
+}
+
+
+/* Contenu principal */
+.main-content {
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 70px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content p {
+    font-size: 40px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Style pour les blocs verticaux */
+.vertical-blocks {
+    background-image: url('../images/les-ilets-pigeon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 20px;
+    height: 800px;
+}
+
+/* Styles de chaque bloc avec couleur de fond spécifique */
+/* Style pour chaque bloc */
+.block {
+    display: flex;
+    flex-direction: column !important; /* Aligner les éléments en colonne */
+    align-items: center; /* Centrer l'image et le texte */
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 250px;
+}
+
+/* Styles de couleurs spécifiques pour chaque bloc */
+.block1 {
+    background-color: #5271ff;
+    margin-left: 425px;
+}
+
+.block2 {
+    background-color: #0cc0df;
+}
+
+.block3 {
+    background-color: #0097b2;
+}
+
+
+/* Effet de survol */
+.block:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 30px;
+    margin-right: 70px;
+}
+
+.navbar-brand img {
+    margin-left: 10px;
+}
+
+.navbar-nav img {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    .block1{
+        margin-left: 60px !important;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 920px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    .block1{
+        margin-left: 150px;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adapter la taille de la navbar */
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 24px;
+        margin-right: 30px;
+    }
+
+    .block1{
+        margin-left: -10px !important;
+    }
+
+    .footer {
+        background-color: #000;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        position: relative;
+        width: 100%;
+    }
+}
